@@ -1,0 +1,46 @@
+REFERENCES
+
+google api definition
+https://www.google.ie/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google%20maps%20api%20definition
+
+Trip Advisor
+http://developer.ean.com/docs/supplemental-services/tripadvisor/
+
+http://developer.ean.com/spec
+http://developer.ean.com/tripadvisor-guidelines/
+
+
+
+FACEBOOK
+
+https://developers.facebook.com/docs/facebook-login/web/login-button
+
+
+Requirements
+javascript
+http://techterms.com/definition/javascript
+
+HTML5
+https://en.wikipedia.org/wiki/HTML5
+
+XML
+https://en.wikipedia.org/wiki/XML
+
+PHP
+https://en.wikipedia.org/wiki/PHP
+
+MYSQL
+https://en.wikipedia.org/wiki/MySQL
+
+API's
+https://en.wikipedia.org/wiki/Application_programming_interface
+
+APACHE
+https://en.wikipedia.org/wiki/Apache_HTTP_Server
+
+CSS
+https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+
+AWS EC2
+http://searchitoperations.techtarget.com/definition/Amazon-EC2-Container-Service
+http://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
