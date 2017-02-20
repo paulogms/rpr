@@ -1,0 +1,57 @@
+[
+
+  {
+    "ID":0,
+    "Player": "Cristiano Ronaldo",
+    "LongShots": "Very Strong",
+    "Finishing": "Very Strong",
+    "Passing": "Strong",
+    "Dribbling": "Strong",
+    "HeadedAttempts": "Strong"
+  },
+  {
+    "ID":"1",
+    "Player": "Messi",
+    "Long shots": "Very Strong",
+    "Finishing": "Very Strong",
+    "Passing": "Very Strong",
+    "Dribbling": "Very Strong",
+    "HeadedAttempts": "Strong"
+  },
+  {
+    "ID":"2",
+    "Player": "Rafinha",
+    "Long shots": "Good",
+    "Finishing": "Good",
+    "Passing": "Strong",
+    "Dribbling": "Poor",
+    "HeadedAttempts": "Strong"
+  },
+  {
+    "ID":"3",
+    "Player": "Paulo",
+    "Long shots": "Strong",
+    "Finishing": "Very Strong",
+    "Passing": "Strong",
+    "Dribbling": "Good",
+    "HeadedAttempts": "Strong"
+  },
+  {
+    "ID":"4",
+    "Player": "Rivaldo",
+    "Long shots": "Very Strong",
+    "Finishing": "Very Strong",
+    "Passing": "Good",
+    "Dribbling": "Poor",
+    "HeadedAttempts": "Strong"
+  },
+  {
+    "ID":"5",
+    "Player": "Kaka",
+    "Long shots": "Strong",
+    "Finishing": "Very Strong",
+    "Passing": "Good",
+    "Dribbling": "Good",
+    "HeadedAttempts": "Good"
+  }
+]

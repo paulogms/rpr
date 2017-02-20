@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Challenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Paulo Gomes</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Challenge Player</h1>
+                        <hr class="small">
+                        <span class="subheading">
+                        <p> When selected a player of your choice, a small business card of his abilities will be displayed . </p>
+                        <br/>
+                        <p> Followed by the player name there will be a button called "summary" giving his results from the previous match. (such as: goals, passing, assistance, fault and cards). 
+                        </p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--<button class="btn-primary col-lg-offset-2 col-lg-2" id="create_player" name="create_player" > Player</button>-->
+                <!--<button class="btn-primary col-lg-2 col-lg-offset-4 " id="create_skills" name="create_skills" >Skills</button>-->
+
+                <div class="post-preview" class="col-lg-12">
+
+                    <h2 class="post-title">
+							  <div class="list-group col-lg-6" id="player">
+							  </div>
+                            <!--<div class="list-group col-lg-6" id="skills">-->
+                                <!--<a href="#" class="list-group-item " data-toggle="modal" data-target="#myModal">Finishing</a>-->
+                                <!--<a href="#" class="list-group-item " data-toggle="modal" data-target="#myModal">Dribbling</a>-->
+                                <!--<a href="#" class="list-group-item " data-toggle="modal" data-target="#myModal">Long shots</a>-->
+                                <!--<a href="#" class="list-group-item " data-toggle="modal" data-target="#myModal">Passing</a>-->
+                                <!--<a href="#" class="list-group-item " data-toggle="modal" data-target="#myModal">Headed attempts</a>-->
+
+                            <!--</div>-->
+
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Rating</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul id="skills_list">
+                                            </ul>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="modal fade" id="summaryModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Summary</h4>
+                                    </div>
+                                    <div class="modal-body" id="summaryDiv">
+                                        <ul id="summary_list">
+                                        </ul>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </h2>
+
+                </div>
+                 </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.linkedin.com/in/paulo-gomes-01612327/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin-square fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/paulo.gomes.148553">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/paulogms">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+    <script>
+
+        //When DOM loaded we attach click event to button
+        $(document).ready(function() {
+
+
+                $.getJSON("players.json",function(obj){
+                    $.each(obj, function(key,value){
+                        $("#player").append("<a href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>"+value.Player+"</a>");
+                        $("#player").append("<input data-toggle='modal' data-target='#summaryModal' type='button' value='Summary' class='btn bnt-primary summary' />")
+
+                    });
+                });
+
+//            $("#create_skills").click(function(){
+//                $.getJSON("players.json",function(obj){
+//                    $.each(obj, function(key,value){
+//                        $("#skills").append("<a href='#' class='list-group-item players_list'>"+value.Finishing+"</a>"+"<br>");
+//                    });
+//                });
+//            });
+
+            $('#player').on('click', 'a', function(e){
+                var clicked_player = $(this).closest("a").index();
+                if(clicked_player==0 ) {
+                    $.getJSON("players.json", function (obj) {
+                        $.each(obj, function (key, value) {
+                            $("#skills_list").html("<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" +
+                                    obj[0].Player + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + " Long Shots :" +
+                                    obj[0].LongShots + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Finishing :" +
+                                    obj[0].Finishing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Passing :" +
+                                    obj[0].Passing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Dribbing :" +
+                                    obj[0].Dribbling + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "HeadedAttempts :" +
+                                    obj[0].HeadedAttempts + "</li>");
+                        });
+                    });
+                }
+                if(clicked_player==1 ) {
+                    $.getJSON("players.json", function (obj) {
+                        $.each(obj, function (key, value) {
+                            $("#skills_list").html("<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" +
+                                    obj[1].Player + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + " Long Shots :" +
+                                    obj[1].LongShots + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Finishing :" +
+                                    obj[1].Finishing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Passing :" +
+                                    obj[1].Passing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Dribbing :" +
+                                    obj[1].Dribbling + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "HeadedAttempts :" +
+                                    obj[1].HeadedAttempts + "</li>");
+                        });
+                    });
+                }
+                if(clicked_player==2 ) {
+                    $.getJSON("players.json", function (obj) {
+                        $.each(obj, function (key, value) {
+                            $("#skills_list").html("<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" +
+                                    obj[2].Player + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + " Long Shots :" +
+                                    obj[2].LongShots + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Finishing :" +
+                                    obj[2].Finishing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Passing :" +
+                                    obj[2].Passing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Dribbing :" +
+                                    obj[2].Dribbling + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "HeadedAttempts :" +
+                                    obj[2].HeadedAttempts + "</li>");
+                        });
+                    });
+                }
+                if(clicked_player==3 ) {
+                    $.getJSON("players.json", function (obj) {
+                        $.each(obj, function (key, value) {
+                            $("#skills_list").html("<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" +
+                                    obj[3].Player + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + " Long Shots :" +
+                                    obj[3].LongShots + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Finishing :" +
+                                    obj[3].Finishing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Passing :" +
+                                    obj[3].Passing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Dribbing :" +
+                                    obj[3].Dribbling + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "HeadedAttempts :" +
+                                    obj[3].HeadedAttempts + "</li>");
+                        });
+                    });
+                }
+                if(clicked_player==4 ) {
+                    $.getJSON("players.json", function (obj) {
+                        $.each(obj, function (key, value) {
+                            $("#skills_list").html("<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" +
+                                    obj[4].Player + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + " Long Shots :" +
+                                    obj[4].LongShots + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Finishing :" +
+                                    obj[4].Finishing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Passing :" +
+                                    obj[4].Passing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Dribbing :" +
+                                    obj[4].Dribbling + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "HeadedAttempts :" +
+                                    obj[4].HeadedAttempts + "</li>");
+                        });
+                    });
+                }
+                if(clicked_player==5 ) {
+                    $.getJSON("players.json", function (obj) {
+                        $.each(obj, function (key, value) {
+                            $("#skills_list").html("<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" +
+                                    obj[5].Player + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + " Long Shots :" +
+                                    obj[5].LongShots + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Finishing :" +
+                                    obj[5].Finishing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Passing :" +
+                                    obj[5].Passing + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "Dribbing :" +
+                                    obj[5].Dribbling + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#myModal'>" + "HeadedAttempts :" +
+                                    obj[5].HeadedAttempts + "</li>");
+                        });
+                    });
+                }
+
+
+            });
+
+
+
+
+            $('#player').on('click', 'input', function(e){
+                var clicked_player = $(this).closest("input").index();
+
+                if(clicked_player== 0) {
+                    $.ajax({
+                        url:"summary.json",
+                        dataType:"json",
+                        cache:"false",
+                        success:function(obj) {
+
+                            $.each(obj, function (key, value) {
+
+                                $("#summary_list").html("<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" +
+                                       // obj[0].Player + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" +
+                                        " Goals :" +
+                                        obj[0].Goals + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Corners :" +
+                                        obj[0].Corners + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Faults :" +
+                                        obj[0].Faults + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Assists :" +
+                                        obj[0].Assists + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Penalty :" +
+                                        obj[0].Penalty + "</li>");
+
+                            });
+                         }
+                    })
+                }
+                if(clicked_player==1 ) {
+                    $.ajax({
+                        url:"summary.json",
+                        dataType:"json",
+                        cache:"false",
+                        success:function(obj) {
+
+                            $.each(obj, function (key, value) {
+
+                                $("#summary_list").html("<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" +
+                                       // obj[1].Player + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" +
+                                        " Goals :" +
+                                        obj[1].Goals + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Corners :" +
+                                        obj[1].Corners + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Faults :" +
+                                        obj[1].Faults + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Assists :" +
+                                        obj[1].Assists + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Penalty :" +
+                                        obj[1].Penalty + "</li>");
+
+                            });
+                        }
+                    })
+                }
+                if(clicked_player==2 ) {
+                    $.ajax({
+                        url:"summary.json",
+                        dataType:"json",
+                        cache:"false",
+                        success:function(obj) {
+
+                            $.each(obj, function (key, value) {
+
+                                $("#summary_list").html("<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" +
+                                      //  obj[2].Player + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "
+                                        "Goals :" +
+                                        obj[2].Goals + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Corners :" +
+                                        obj[2].Corners + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Faults :" +
+                                        obj[2].Faults + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Assists :" +
+                                        obj[2].Assists + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Penalty :" +
+                                        obj[2].Penalty + "</li>");
+
+                            });
+                        }
+                    })
+                }
+                if(clicked_player==3 ) {
+                    $.ajax({
+                        url:"summary.json",
+                        dataType:"json",
+                        cache:"false",
+                        success:function(obj) {
+
+                            $.each(obj, function (key, value) {
+
+                                $("#summary_list").html("<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" +
+                                       // obj[3].Player + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "
+                                        "Goals :" +
+                                        obj[3].Goals + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Corners :" +
+                                        obj[3].Corners + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Faults :" +
+                                        obj[3].Faults + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Assists :" +
+                                        obj[3].Assists + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Penalty :" +
+                                        obj[3].Penalty + "</li>");
+
+                            });
+                        }
+                    })
+                }
+                if(clicked_player==4 ) {
+                    $.ajax({
+                        url:"summary.json",
+                        dataType:"json",
+                        cache:"false",
+                        success:function(obj) {
+
+                            $.each(obj, function (key, value) {
+
+                                $("#summary_list").html("<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" +
+                                       // obj[4].Player + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "
+                                       " Goals :" +
+                                        obj[4].Goals + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Corners :" +
+                                        obj[4].Corners + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Faults :" +
+                                        obj[4].Faults + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Assists :" +
+                                        obj[4].Assists + "</li>" + "<li href='#' class='list-group-item ' data-toggle='modal' data-target='#summaryModal'>" + "Penalty :" +
+                                        obj[4].Penalty + "</li>");
+
+                            });
+                        }
+                    })
+                }
+
+                if(clicked_player==5 ) {
+                    $.ajax({
+                        url:"summary.json",
+                        dataType:"json",
+                        cache:"false",
+                        success:function(obj){
+
+                            $.each(obj, function (key, value) {
+                                $("#summary_list").html("<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#summaryModal'>" +
+                                      //  obj[5].Player + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#summaryModal'>" + "
+                                        "Goals :" +
+                                        obj[5].Goals + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#summaryModal'>" + "Corners :" +
+                                        obj[5].Corners + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#summaryModal'>" + "Faults :" +
+                                        obj[5].Faults + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#summaryModal'>" + "Assists :" +
+                                        obj[5].Assists + "</li>" + "<li href='#' class='list-group-item players_list' data-toggle='modal' data-target='#summaryModal'>" + "Penalties :" +
+                                        obj[5].Penalty + "</li>");
+                            });
+
+
+                        }
+                    })
+                }
+
+
+
+
+            });
+
+            $.ajax({
+                url:"summary.json",
+                dataType:"json",
+                success:function(data){
+                    console.log(data);
+                }
+            })
+
+//            $("#create_skills").click(function(){
+//                $("#skills").show();
+//            });
+
+
+        });
+    </script>
+</body>
+
+</html>
