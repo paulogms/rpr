@@ -1,0 +1,64 @@
+REFERENCES
+
+queue code
+http://stackoverflow.com/questions/1590247/how-do-you-implement-a-stack-and-a-queue-in-javascript
+
+
+google api definition
+https://www.google.ie/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google%20maps%20api%20definition
+
+Trip Advisor
+http://developer.ean.com/docs/supplemental-services/tripadvisor/
+https://developer-tripadvisor.com/content-api/
+http://developer.ean.com/spec
+http://developer.ean.com/tripadvisor-guidelines/
+https://www.tripadvisorsupport.com/hc/en-us/articles/200615417-What-widgets-are-available-for-free-for-my-website-
+
+
+FACEBOOK
+
+https://developers.facebook.com/docs/facebook-login/web/login-button
+https://developers.facebook.com/docs/pages/getting-started
+https://developers.facebook.com/docs/facebook-login/web
+https://developers.facebook.com/docs/facebook-login/permissions/overview
+https://developers.facebook.com/docs/php/gettingstarted
+
+Requirements
+javascript
+http://techterms.com/definition/javascript
+
+HTML5
+https://en.wikipedia.org/wiki/HTML5
+
+XML
+https://en.wikipedia.org/wiki/XML
+
+PHP
+https://en.wikipedia.org/wiki/PHP
+
+MYSQL
+https://en.wikipedia.org/wiki/MySQL
+
+API's
+https://en.wikipedia.org/wiki/Application_programming_interface
+
+APACHE
+https://en.wikipedia.org/wiki/Apache_HTTP_Server
+
+CSS
+https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+
+AWS EC2
+http://searchitoperations.techtarget.com/definition/Amazon-EC2-Container-Service
+http://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
+
+DATABASE
+https://www.google.ie/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+is+relational+model
+
+BACKUP DATABASE
+http://searchdatabackup.techtarget.com/definition/backup
+https://www.ultgate.com/3479/automatically-backup-files-databases-site-godaddy
+https://github.com/etiennerached/godaddy-backup-script
+
+Asana
+https://en.wikipedia.org/wiki/Asana_(software)
